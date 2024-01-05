@@ -54,7 +54,6 @@ Search sonuçlarından esnek yanıt alabilmek için analyzer indeximize analyzer
             }
        }
   }
-}
 ```
 ## Insert Data (Bulk Import)
 ##### POST {{BASE_URL}}/api/products/_bulk
@@ -66,8 +65,7 @@ Search sonuçlarından esnek yanıt alabilmek için analyzer indeximize analyzer
 {"ProductID":1003,"ProductName":"Tv","ProductType":"E","StockStatus":"Yes"}
 {"index":{"_index":"products"}}
 {"ProductID":1004,"ProductName":"PC","ProductType":"S","StockStatus":"No"}
-...
-#more
+
 ```
 
 ## Multi Search
