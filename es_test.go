@@ -1,3 +1,26 @@
+package main
+
+import (
+	"encoding/csv"
+	"encoding/json"
+	"fmt"
+	"io"
+	"log"
+	"os"
+	"strconv"
+	"strings"
+	"testing"
+	"unicode"
+)
+
+
+type Products struct {
+	ProductID   int    `json:"ProductID"`
+	ProductName string `json:"ProductName"`
+	ProductType string `json:"ProductType"`
+	StockStatus string `json:"StockStatus"`
+}
+
 func Test_Products(t *testing.T) {
 	csvFile, err := os.Open(".../scripts/Products.csv")
 	if err != nil {
