@@ -157,3 +157,14 @@ Search sonuçlarından esnek yanıt alabilmek için analyzer indeximize analyzer
   }
 }
 ```
+## Update Data Value
+
+##### POST {{BASE_URL}}/api/products/_update/sC8YXYwBeg3N1EkgSID5(_id)
+
+```json
+{
+  "doc": {
+     "ProductName": "Saat"
+  }
+}
+```
