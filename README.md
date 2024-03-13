@@ -19,6 +19,8 @@
 
 ## Open Index
 
+Settings de bir değişiklik yapmak istersek sırasıyla; close index, set settings, open index 
+
 ##### POST {{BASE_URL}}/api/products/_open
 
 
