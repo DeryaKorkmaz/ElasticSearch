@@ -170,3 +170,27 @@ Search sonuçlarından esnek yanıt alabilmek için analyzer indeximize analyzer
   }
 }
 ```
+
+## Update Multiple Data
+
+##### POST {{BASE_URL}}/api/products/_update_by_query
+
+```json
+{
+  "script": {
+    "source": "ctx._source.StockStatus = params.new_stock_status",
+    "lang": "painless",
+    "params": {
+      "new_stock_status": "Yes"
+    }
+  },
+  "query": {
+    "term": {
+      "StockStatus": {
+        "value": "No"
+      }
+    }
+  }
+}
+
+```
